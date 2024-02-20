@@ -1,0 +1,192 @@
+@import url(reset.css);
+@import url(media.css);
+@import url(font-face.css);
+:root {
+	--main-color: #222;
+	--second-color: #f16d7f;
+}
+body {
+	font-family: 'Lato Regular', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+}
+button {
+	background: transparent;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+.container {
+	width: 1140px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.header {
+	background: var(--main-color);
+}
+.navigation {
+	min-height: 75px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.navigation__inner {
+	display: flex;
+	align-items: center;
+	gap: 33px;
+}
+.navigation svg {
+	fill: #e8e8e8;
+	transition: fill 0.2s ease;
+}
+.navigation svg:hover {
+	fill: var(--second-color);
+}
+.main {
+}
+.promo {
+	background-color: #f1e4e6;
+}
+.promo__inner {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-image: url(../images/promo/promo-bg.png);
+	background-repeat: no-repeat;
+	background-position: -220px 0;
+}
+.title__wrapper {
+	display: flex;
+	flex-direction: column;
+	grid-column: 2;
+	justify-content: center;
+	height: 100vh;
+	max-height: 764px;
+}
+.promo__title {
+	font-weight: 900;
+	font-size: 48px;
+	color: var(--main-color);
+	text-transform: uppercase;
+	border-left: 12px solid var(--second-color);
+	padding-left: 16px;
+}
+.promo__tiny-title {
+	font-weight: 700;
+	font-size: 32px;
+	display: block;
+}
+.promo__pink-title {
+	color: var(--second-color);
+}
+.offers {
+	padding: 65px 0 96px 0;
+}
+.offers__list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 30px;
+}
+.offers__list-item {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 360px;
+	height: 260px;
+	background: #211616;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-transform: uppercase;
+}
+.offers__list-item--women {
+	background-image: url(../images/offers/women.jpg);
+}
+.offers__list-item--men {
+	background-image: url(../images/offers/men.jpg);
+}
+.offers__list-item--kids {
+	background-image: url(../images/offers/kids.jpg);
+}
+.offers__list-item--accesories {
+	background-image: url(../images/offers/accesories.jpg);
+	width: 100%;
+	height: 180px;
+	grid-column: span 3;
+}
+.offers__list-text {
+	position: relative;
+	z-index: 2;
+}
+.offers__list-title {
+	font-weight: 400;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+}
+.offers__list-subtitle {
+	display: block;
+	margin-top: 7px;
+	font-weight: 700;
+	font-size: 24px;
+	color: var(--second-color);
+}
+.offers__over {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(33, 22, 22, 0.7);
+}
+.products {
+}
+.products__text {
+	text-align: center;
+}
+.products__title {
+	font-weight: 400;
+	font-size: 30px;
+	color: var(--main-color);
+}
+.products__subtitle {
+	font-weight: 400;
+	font-size: 14px;
+	color: #9f9f9f;
+	margin: 8px 0 48px 0;
+}
+.products__list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: 30px;
+}
+.products__item-text {
+	padding: 24px 29px 24px 16px;
+}
+.products__item {
+	background-color: #f8f8f8;
+}
+.products__img-wrapper {
+}
+.products__img {
+}
+.products__item-title {
+	font-weight: 400;
+	font-size: 13px;
+	color: #000;
+	text-transform: uppercase;
+}
+.products__item-descr {
+	font-weight: 300;
+	font-size: 14px;
+	color: #5d5d5d;
+	margin: 16px 0;
+}
+.products__item-price {
+	font-weight: 400;
+	font-size: 16px;
+	color: var(--second-color);
+}
