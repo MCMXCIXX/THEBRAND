@@ -1,0 +1,28 @@
+@media(max-width: 1180px){
+    .offers__list-item {
+        width: 100%;
+        height: 200px;
+    }
+    .products__list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .products__item {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 880px){
+    .offers__list-item {
+        height: 168px;
+    }
+    .offers__list-item--accesories {
+        height: 116px;
+    }
+    .promo__title {
+        font-size: 44px;
+    }
+    .promo__tiny-title {
+        font-size: 24px;
+    }
+}
