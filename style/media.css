@@ -26,3 +26,24 @@
         font-size: 24px;
     }
 }
+@media (max-width: 768px) {
+    .promo__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: none;
+    }
+    .offers__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .offers__list-item {
+        max-width: 342px;
+        background-position: top center;
+    }
+    .products__list {
+        display: flex;
+        flex-direction: column;
+    }
+}
